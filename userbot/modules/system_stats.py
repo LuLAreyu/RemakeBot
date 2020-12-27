@@ -234,7 +234,7 @@ async def amireallyalive(alive):
     output = (
         f"`N0N3 -----UserBot`\n Running on 🤖 `{UPSTREAM_REPO_BRANCH}` 🤖\n"
         f"╭━━━━━━━━━━━━━━━━━━━━━╮\n"
-        f"┣[•👤 `USER     :`Manusia Tamvan {DEFAULTUSER}\n"
+        f"┣[•👤 `USER     :`Pro Player {DEFAULTUSER}\n"
         f"┣[ 👁‍🗨 `Username :`@{user.username}\n"
         "`┣▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱`\n"
         f"┣[•⚙️ `Telethon :`v {version.__version__} 🔥\n"
@@ -244,7 +244,7 @@ async def amireallyalive(alive):
         f"┣[•🗃 `Modules  :`{len(modules)} Loaded🔥\n"
         f"┣[•🕒 `Uptime   :`{uptime} 🔥\n"
         f"╰━━━━━━━━━━━━━━━━━━━━━╯\n"
-        f" •MOD BY : `Paling Tamvan {DEFAULTUSER}`")
+        f" •MOD BY : `Pro Player {DEFAULTUSER}`")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO
