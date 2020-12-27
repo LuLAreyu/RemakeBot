@@ -1,7 +1,7 @@
 {
   "name": "NONE ---",
   "description": "A Telegram userbot running on Python 3.7+ with an sqlalchemy database, which can be coupled up with Mongo DB and a Redis backend",
-  "logo": "https://telegra.ph/file/fbc0df31dd055da634b33.jpg",
+  "logo": "https://telegra.ph/file/9f0cf496ca3215f2a2614.png",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/meareyou/lel_remake_UserBoto",
+  "repository": "https://github.com/LuLAreyu/RemakeBot",
   "website": "https://telegra.ph/How-to-host-a-Telegram-Userbot-11-02",
-  "success_url": "@Crypto08_bot",
+  "success_url": "@GabuterTololsCH",
   "stack": "container",
   "env": {
     "API_KEY": {
