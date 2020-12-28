@@ -420,7 +420,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "GitHub Repo",
-                                "https://github.com/meareyou/lel_remake_UserBoto"),
+                                "https://github.com/LuLAreyu/RemakeBot"),
                             custom.Button.url(
                                 "Support",
                                 "www.pornhub.com")],
