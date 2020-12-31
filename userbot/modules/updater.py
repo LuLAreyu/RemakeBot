@@ -189,7 +189,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n`BOT N0N3 --- \n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
+            f'\n`BOT LuL --- \n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
@@ -215,10 +215,10 @@ async def upstream(event):
         await event.edit(
             '`Force-Syncing to latest stable userbot code, please wait...`')
     else:
-        await event.edit('`Proses Update N0N3 ---, ....🛠️`')
-        await event.edit('`Proses Update N0N3 ---, loading....🛠️`')
-        await event.edit('`Proses Update N0N3 ---, updating....🛠️`')
-        await event.edit('`Proses Update N0N3 ---, silahkan tunggu....🛠️`')
+        await event.edit('`Proses Update LuL ---, ....🛠️`')
+        await event.edit('`Proses Update LuL ---, loading....🛠️`')
+        await event.edit('`Proses Update LuL ---, updating....🛠️`')
+        await event.edit('`Proses Update LuL ---, silahkan tunggu....🛠️`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
