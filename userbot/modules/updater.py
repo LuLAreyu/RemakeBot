@@ -98,7 +98,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#NOTE \n"
-                "OK XBOT-REMIX Berhasil Di Update")
+                "OK LuL-UBot Berhasil Di Update")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -115,9 +115,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('`**NONE ---** Berhasil Di Update!`')
+    await event.edit('`**LuL ---** Berhasil Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('`XBOT Di Restart....`')
+    await event.edit('`LuLBot Di Restart....`')
     await asyncio.sleep(1)
     await event.edit('`Silahkan Tunggu Beberapa Detik!`')
     await asyncio.sleep(10)
@@ -126,7 +126,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#NOTICE \n"
-            "OK Bot N0N3 --- Berhasil Di Update")
+            "OK Bot LuL --- Berhasil Di Update")
         await asyncio.sleep(10)
         await event.delete()
 
