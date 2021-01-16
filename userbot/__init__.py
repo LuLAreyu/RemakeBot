@@ -100,7 +100,7 @@ GITHUB_ACCESS_TOKEN = os.environ.get("GITHUB_ACCESS_TOKEN", None)
 # Custom (forked) repo URL for updater.
 UPSTREAM_REPO_URL = os.environ.get(
     "UPSTREAM_REPO_URL",
-    "https://github.com/meareyou/lel_remake_UserBoto.git")
+    "https://github.com/LuLAreyu/RemakeBot.git")
 UPSTREAM_REPO_BRANCH = os.environ.get(
     "UPSTREAM_REPO_BRANCH", "x-sql-extended")
 
@@ -176,7 +176,7 @@ S_PACK_NAME = os.environ.get("S_PACK_NAME", None)
 
 # Default .alive logo
 ALIVE_LOGO = os.environ.get(
-    "ALIVE_LOGO") or "https://telegra.ph/file/2b35f0ef81fe0f9392a12.mp4"
+    "ALIVE_LOGO") or "https://telegra.ph/file/a185d352f1935c22922d3.mp4"
 
 # Last.fm Module
 BIO_PREFIX = os.environ.get("BIO_PREFIX", None)
@@ -315,7 +315,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(BOTLOG_CHATID, "```@Crypto08\nBOT AKTIF TOD\nSELAMAT BERKENTOD```")
+    await bot.send_message(BOTLOG_CHATID, "```@EEQ_QUDA\nBOT AKTIF TOD\nSELAMAT BERKENTOD```")
     return
 
 with bot:
@@ -386,7 +386,7 @@ with bot:
         @tgbot.on(events.NewMessage(pattern="/start"))
         async def handler(event):
             if event.message.from_id != uid:
-                await event.reply("I'm [NONE ---](https://github.com/meareyou/lel_remake_UserBoto) modules helper...\nplease make your own bot, don't use mine 😋")
+                await event.reply("I'm [NONE ---](https://github.com/LuLAreyu/RemakeBot) modules helper...\nplease make your own bot, don't use mine 😋")
             else:
                 await event.reply(f"`Hey there {ALIVE_NAME}\n\nI work for you :)`")
 
@@ -420,7 +420,7 @@ with bot:
                         [
                             custom.Button.url(
                                 "GitHub Repo",
-                                "https://github.com/meareyou/lel_remake_UserBoto"),
+                                "https://github.com/LuLAreyu/RemakeBot"),
                             custom.Button.url(
                                 "Support",
                                 "www.pornhub.com")],

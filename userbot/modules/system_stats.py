@@ -232,9 +232,9 @@ async def amireallyalive(alive):
     user = await bot.get_me()
     uptime = await get_readable_time((time.time() - StartTime))
     output = (
-        f"`N0N3 -----UserBot`\n Running on 🤖 `{UPSTREAM_REPO_BRANCH}` 🤖\n"
+        f"`LuL - UserBot`\n Running on 🤖 `{UPSTREAM_REPO_BRANCH}` 🤖\n"
         f"╭━━━━━━━━━━━━━━━━━━━━━╮\n"
-        f"┣[•👤 `USER     :`Manusia Tamvan {DEFAULTUSER}\n"
+        f"┣[•👤 `USER     :`Pro Player {DEFAULTUSER}\n"
         f"┣[ 👁‍🗨 `Username :`@{user.username}\n"
         "`┣▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱`\n"
         f"┣[•⚙️ `Telethon :`v {version.__version__} 🔥\n"
@@ -244,7 +244,7 @@ async def amireallyalive(alive):
         f"┣[•🗃 `Modules  :`{len(modules)} Loaded🔥\n"
         f"┣[•🕒 `Uptime   :`{uptime} 🔥\n"
         f"╰━━━━━━━━━━━━━━━━━━━━━╯\n"
-        f" •MOD BY : `Paling Tamvan {DEFAULTUSER}`")
+        f" •MOD BY : `Pro Player {DEFAULTUSER}`")
     if ALIVE_LOGO:
         try:
             logo = ALIVE_LOGO

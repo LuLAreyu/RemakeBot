@@ -79,7 +79,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         else:
             remote = repo.create_remote("heroku", heroku_git_url)
         try:
-            remote.push(refspec="HEAD:refs/heads/master", force=True)
+            remote.push(refspec="HEAD:refs/heads/x-sql-extended", force=True)
         except GitCommandError as error:
             await event.edit(f'{txt}\n`Here is the error log:\n{error}`')
             return repo.__del__()
@@ -98,7 +98,7 @@ async def deploy(event, repo, ups_rem, ac_br, txt):
         if BOTLOG:
             await event.client.send_message(
                 BOTLOG_CHATID, "#NOTE \n"
-                "OK XBOT-REMIX Berhasil Di Update")
+                "OK LuL-UBot Berhasil Di Update")
 
     else:
         await event.edit('`[HEROKU]:'
@@ -115,9 +115,9 @@ async def update(event, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await update_requirements()
-    await event.edit('`**NONE ---** Berhasil Di Update!`')
+    await event.edit('`**LuL ---** Berhasil Di Update!`')
     await asyncio.sleep(1)
-    await event.edit('`XBOT Di Restart....`')
+    await event.edit('`LuLBot Di Restart....`')
     await asyncio.sleep(1)
     await event.edit('`Silahkan Tunggu Beberapa Detik!`')
     await asyncio.sleep(10)
@@ -126,7 +126,7 @@ async def update(event, repo, ups_rem, ac_br):
     if BOTLOG:
         await event.client.send_message(
             BOTLOG_CHATID, "#NOTICE \n"
-            "OK Bot N0N3 --- Berhasil Di Update")
+            "OK Bot LuL --- Berhasil Di Update")
         await asyncio.sleep(10)
         await event.delete()
 
@@ -163,9 +163,10 @@ async def upstream(event):
         origin = repo.create_remote("upstream", off_repo)
         origin.fetch()
         force_update = True
-        repo.create_head("master", origin.refs.master)
-        repo.heads.master.set_tracking_branch(origin.refs.master)
-        repo.heads.master.checkout(True)
+        repo.create_head("x-sql-extended", origin.refs.x - sql - extended)
+        repo.heads.x - sql - \
+            extended.set_tracking_branch(origin.refs.x - sql - extended)
+        repo.heads.x - sql - extended.checkout(True)
 
     ac_br = repo.active_branch.name
     if ac_br != UPSTREAM_REPO_BRANCH:
@@ -188,7 +189,7 @@ async def upstream(event):
 
     if changelog == '' and force_update is False:
         await event.edit(
-            f'\n`BOT N0N3 --- \n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
+            f'\n`BOT LuL --- \n` sudah **versi terbaru**\n`BRANCH:`**{UPSTREAM_REPO_BRANCH}**\n')
         await asyncio.sleep(15)
         await event.delete()
         return repo.__del__()
@@ -214,10 +215,10 @@ async def upstream(event):
         await event.edit(
             '`Force-Syncing to latest stable userbot code, please wait...`')
     else:
-        await event.edit('`Proses Update N0N3 ---, ....🛠️`')
-        await event.edit('`Proses Update N0N3 ---, loading....🛠️`')
-        await event.edit('`Proses Update N0N3 ---, updating....🛠️`')
-        await event.edit('`Proses Update N0N3 ---, silahkan tunggu....🛠️`')
+        await event.edit('`Proses Update LuL ---, ....🛠️`')
+        await event.edit('`Proses Update LuL ---, loading....🛠️`')
+        await event.edit('`Proses Update LuL ---, updating....🛠️`')
+        await event.edit('`Proses Update LuL ---, silahkan tunggu....🛠️`')
     if conf == "now":
         await update(event, repo, ups_rem, ac_br)
         await asyncio.sleep(10)
